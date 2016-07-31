@@ -1,4 +1,4 @@
-<% if current_user && current_user.admin? && !current_user?(user) %>
+<% if current_user.try(:admin?) %>
 
 <h1>Editing Product</h1>
 
